@@ -1,0 +1,48 @@
+{
+  "name": "@lourd/code-splitting",
+  "version": "1.1.0",
+  "description": "Simple example showing code splitting",
+  "author": "Louis DeScioli <louis.descioli@gmail.com>",
+  "repository": "https://github.com/lourd/webpack-rrv4-code-splitting",
+  "license": "MIT",
+  "scripts": {
+    "clear": "rimraf dist",
+    "build": "rimraf dist && npm run clear && cross-env NODE_ENV=production webpack -p --env.prod=true",
+    "start": "webpack-dev-server --content-base src --hot --inline",
+    "analyze": "cross-env NODE_ENV=production webpack-dev-server --env.analyze=true",
+    "analyze-prod": "cross-env NODE_ENV=production webpack-dev-server --env.prod=true --env.analyze=true"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-input-range": "^1.1.4",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.7.1",
+    "redux-form": "^6.8.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.28.4",
+    "faker": "^4.1.0",
+    "html-webpack-plugin": "^2.29.0",
+    "rimraf": "^2.6.1",
+    "style-loader": "^0.18.2",
+    "webpack": "2.6.1",
+    "webpack-browser-plugin": "^1.0.20",
+    "webpack-bundle-analyzer": "^2.8.2",
+    "webpack-dev-server": "^2.5.0"
+  }
+}
