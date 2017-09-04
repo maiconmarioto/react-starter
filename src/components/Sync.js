@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './Sync.css'
 
 export default class Sync extends Component {
   render() {

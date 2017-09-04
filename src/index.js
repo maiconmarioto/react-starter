@@ -19,18 +19,18 @@ const createStoreWithMiddleware = applyMiddleware(
 
 const store = createStoreWithMiddleware(reducers);
 
-const Foo = asyncComponent(() => import(/* webpackChunkName: "foozin" */ './components/Foo').then(module => module.default))
-const Bar = asyncComponent(() => import(/* webpackChunkName: "barzin" */ './components//Bar').then(module => module.default))
+const Foo = asyncComponent(() => import(/* webpackChunkName: "foo" */ './components/Foo').then(module => module.default))
+const Bar = asyncComponent(() => import(/* webpackChunkName: "bar" */ './components//Bar').then(module => module.default))
 
 
 render(
   <Provider store={store}>
     <HashRouter>
       <div>
-        <Route path="/" exact  component={App} />
+        <Route path="/"   component={App} />
         <Route path="/" exact  component={Home} />
-        <Route path="/foo" exact  component={Foo} />
-        <Route path="/bar" exact  component={Bar} />
+        <Route path="/foo"   component={Foo} />
+        <Route path="/bar"   component={Bar} />
       </div>
     </HashRouter>
   </Provider>
