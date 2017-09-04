@@ -35,18 +35,27 @@ Wait for the webpack to work, and then a page with the project URL will open in 
 
 ### Another Commands
 
+To clear the dist folder.
 ```
-yarn run clear -- Will clear the dist folder.
+yarn run clear
+```
+To build your application to production mode
+```
+yarn run build
+```
+To analyze your application using webpck analyzer module (webpack-bundle-analyzer)
+```
+yarn run analyze 
+```
+#### This module will help you:
+>   - Realize whats really inside your bundle
+>   - Find out what modules make up the most of it's size
+>   - Find modules that got there by mistake
+>   - Optimize it
 
-yarn run build -- Will build your application to production mode
-
-yarn run analyze -- Will run your application in dev mode and open the analyzer module (webpack-bundle-analyzer) This module will help you:
--- Realize whats really inside your bundle
--- Find out what modules make up the most of it's size
--- Find modules that got there by mistake
--- Optimize it
-
-yarn run analize-prod -- Same as above, but with a production build
+Same as above, but with a production build
+```
+yarn run analize-prod
 ```
 ## Built With
 
