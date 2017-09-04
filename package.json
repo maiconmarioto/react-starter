@@ -1,6 +1,6 @@
 {
   "name": "@maiconmarioto/react-starter",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Starter kit for react with code splitting using react-router 4",
   "author": "Louis DeScioli <louis.descioli@gmail.com>",
   "repository": "https://github.com/maiconmarioto/react-starter",
